@@ -1,0 +1,167 @@
+<!--
+  Copyright (c) 2020, salesforce.com, inc.
+  All rights reserved.
+  SPDX-License-Identifier: BSD-3-Clause
+  For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
+-->
+
+<template>
+  <div class="container">
+    <lightning-spinner
+      if:true={loading}
+      alternative-text="Loading"
+      size="large"
+    ></lightning-spinner>
+    <div class="header">
+      <span class="title"> <span>@AuraEnabled</span> Scanner </span>
+    </div>
+
+    <div class="warningBox" if:true={showPermissionsError}>
+      <c-oe-illustrator
+        artwork-name="no access 2"
+        heading={label.Warning_Header}
+        message={label.Warning_Message}
+        size="large"
+      ></c-oe-illustrator>
+
+      <lightning-button
+        if:true={showOpenSetupButton}
+        variant="brand"
+        label={label.Open_Setup}
+        onclick={openSetup}
+      ></lightning-button>
+    </div>
+
+    <div if:true={appLoaded} class="splitview">
+      <div class="list_column">
+        <div class="slds-split-view_container slds-is-open">
+          <article
+            aria-hidden="false"
+            id="split-view-id"
+            class="slds-split-view slds-grid slds-grid_vertical slds-grow"
+          >
+            <div class="slds-grid slds-grid_vertical">
+              <ul
+                aria-multiselectable="true"
+                role="listbox"
+                aria-label="Select an item to open it in a new workspace tab."
+              >
+                <template for:each={classes} for:item="item">
+                  <li
+                    key={item.id}
+                    class="slds-split-view__list-item"
+                    role="presentation"
+                  >
+                    <a
+                      href="javascript:void(0);"
+                      aria-selected={isSelected}
+                      role="option"
+                      class="slds-split-view__list-item-action slds-grow slds-has-flexi-truncate"
+                      tabindex="0"
+                      onclick={handleClassClick}
+                      data-id={item.id}
+                    >
+                      <div class="slds-grid slds-wrap">
+                        <span
+                          class="slds-truncate slds-text-body_regular slds-text-color_default"
+                          title={item.name}
+                          >{item.name}</span
+                        >
+                        <span class="slds-truncate slds-col_bump-left">
+                          <lightning-icon
+                            if:true={item.hasNoPermissions}
+                            icon-name="utility:priority"
+                            alternative-text={label.Invisible_Class_Flag}
+                            title={label.Invisible_Class_Flag}
+                            size="x-small"
+                            variant="error"
+                          ></lightning-icon>
+                        </span>
+                      </div>
+                    </a>
+                  </li>
+                </template>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="options_column">
+        <div if:false={showOptions}>
+          <div class="slds-text-heading_large slds-m-bottom_small">
+            {label.Getting_Started_Header}
+          </div>
+          {label.Getting_Started_Message}
+        </div>
+        <div if:true={showOptions}>
+          <div class="classNameHeading slds-text-heading_large">
+            {className}
+          </div>
+
+          <lightning-accordion
+            allow-multiple-sections-open
+            active-section-name={activeSections}
+          >
+            <lightning-accordion-section name="A" label={label.Profiles}>
+              <div class="slds-m-bottom_medium">
+                <lightning-dual-listbox
+                  name="profiles"
+                  label={label.Profiles}
+                  source-label={label.Available}
+                  selected-label={label.Selected}
+                  options={profileOptions}
+                  value={selectedProfiles}
+                  onchange={handleProfileChange}
+                  variant="label-hidden"
+                ></lightning-dual-listbox>
+              </div>
+            </lightning-accordion-section>
+
+            <lightning-accordion-section name="B" label={label.Permission_Sets}>
+              <div class="slds-m-bottom_medium">
+                <lightning-dual-listbox
+                  name="permissionsets"
+                  label={label.Permission_Sets}
+                  source-label={label.Available}
+                  selected-label={label.Selected}
+                  options={permSetOptions}
+                  value={selectedPermSets}
+                  onchange={handlePermSetChange}
+                  variant="label-hidden"
+                ></lightning-dual-listbox>
+              </div>
+            </lightning-accordion-section>
+          </lightning-accordion>
+
+          <div class="slds-m-bottom_medium">
+            <lightning-button
+              variant="brand"
+              label={label.Save}
+              onclick={update}
+              disabled={isSaveDisabled}
+            ></lightning-button>
+          </div>
+        </div>
+      </div>
+
+      <div if:true={showOptions} class="code_column">
+        <pre>
+			<code class="language-java">
+				<template if:true={selectedClass}>{selectedClass.code}</template>
+			</code>
+		</pre>
+      </div>
+    </div>
+    <c-oe-dialog
+      if:true={showConfirmDialog}
+      title={label.Unsaved_Header}
+      message={label.Unsaved_Message}
+      confirm-label={label.Discard}
+      cancel-label={label.Cancel}
+      name="confirmModal"
+      onclick={handleDialogClick}
+    >
+    </c-oe-dialog>
+  </div>
+</template>

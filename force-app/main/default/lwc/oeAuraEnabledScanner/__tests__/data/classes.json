@@ -1,0 +1,346 @@
+[
+  {
+    "code": "public with sharing class TestBlah {\n  @AuraEnabled\n  public static string baddabing(){\n    return null;\n  }\n}",
+    "hasNoPermissions": true,
+    "id": "01p55000004UYBxAAO",
+    "name": "TestBlah",
+    "permSets": [
+      {
+        "id": "0PS55000000XpOXGA0",
+        "name": "AuraEnabledScannerUser"
+      }
+    ],
+    "profiles": [
+      {
+        "id": "0PS55000000UyWKGA0",
+        "name": "Analytics Cloud Integration User"
+      },
+      {
+        "id": "0PS55000000UyWJGA0",
+        "name": "Analytics Cloud Security User"
+      },
+      {
+        "id": "0PS55000000UyVyGAK",
+        "name": "Authenticated Website"
+      },
+      {
+        "id": "0PS55000000UyVmGAK",
+        "name": "Authenticated Website"
+      },
+      {
+        "id": "0PS55000000UyWLGA0",
+        "name": "CPQ Integration User"
+      },
+      {
+        "id": "0PS55000000UyWHGA0",
+        "name": "Chatter External User"
+      },
+      {
+        "id": "0PS55000000UyWGGA0",
+        "name": "Chatter Free User"
+      },
+      {
+        "id": "0PS55000000UyWFGA0",
+        "name": "Chatter Moderator User"
+      },
+      {
+        "id": "0PS55000000UyVkGAK",
+        "name": "Company Communities User"
+      },
+      {
+        "id": "0PS55000000UyVvGAK",
+        "name": "Contract Manager"
+      },
+      {
+        "id": "0PS55000000UyWOGA0",
+        "name": "Cross Org Data Proxy User"
+      },
+      {
+        "id": "0PS55000000UyVpGAK",
+        "name": "Custom: Marketing Profile"
+      },
+      {
+        "id": "0PS55000000UyVoGAK",
+        "name": "Custom: Sales Profile"
+      },
+      {
+        "id": "0PS55000000UyVwGAK",
+        "name": "Custom: Support Profile"
+      },
+      {
+        "id": "0PS55000000UyVxGAK",
+        "name": "Customer Community Login User"
+      },
+      {
+        "id": "0PS55000000UyW8GAK",
+        "name": "Customer Community Plus Login User"
+      },
+      {
+        "id": "0PS55000000UyW2GAK",
+        "name": "Customer Community Plus User"
+      },
+      {
+        "id": "0PS55000000UyWDGA0",
+        "name": "Customer Community User"
+      },
+      {
+        "id": "0PS55000000UyW0GAK",
+        "name": "Customer Portal Manager Custom"
+      },
+      {
+        "id": "0PS55000000UyW6GAK",
+        "name": "Customer Portal Manager Standard"
+      },
+      {
+        "id": "0PS55000000UyWAGA0",
+        "name": "External Identity User"
+      },
+      {
+        "id": "0PS55000000UyW7GAK",
+        "name": "Force.com - App Subscription User"
+      },
+      {
+        "id": "0PS55000000UyWEGA0",
+        "name": "Force.com - Free User"
+      },
+      {
+        "id": "0PS55000000UyW5GAK",
+        "name": "Gold Partner User"
+      },
+      {
+        "id": "0PS55000000UyW4GAK",
+        "name": "High Volume Customer Portal"
+      },
+      {
+        "id": "0PS55000000UyVlGAK",
+        "name": "High Volume Customer Portal User"
+      },
+      {
+        "id": "0PS55000000UyW1GAK",
+        "name": "Identity User"
+      },
+      {
+        "id": "0PS55000000UyVsGAK",
+        "name": "Marketing User"
+      },
+      {
+        "id": "0PS55000000XpN9GAK",
+        "name": "Minimum Access - Salesforce"
+      },
+      {
+        "id": "0PS55000000UyW9GAK",
+        "name": "Partner App Subscription User"
+      },
+      {
+        "id": "0PS55000000UyWCGA0",
+        "name": "Partner Community Login User"
+      },
+      {
+        "id": "0PS55000000UyWBGA0",
+        "name": "Partner Community User"
+      },
+      {
+        "id": "0PS55000000UyVqGAK",
+        "name": "Read Only"
+      },
+      {
+        "id": "0PS55000000UyW3GAK",
+        "name": "Silver Partner User"
+      },
+      {
+        "id": "0PS55000000UyVrGAK",
+        "name": "Solution Manager"
+      },
+      {
+        "id": "0PS55000000UyVnGAK",
+        "name": "Standard Platform User"
+      },
+      {
+        "id": "0PS55000000UyVuGAK",
+        "name": "Standard User"
+      },
+      {
+        "id": "0PS55000000UyVtGAK",
+        "name": "System Administrator"
+      },
+      {
+        "id": "0PS55000000UyVzGAK",
+        "name": "Work.com Only User"
+      }
+    ],
+    "selectedPermSets": [],
+    "selectedProfiles": []
+  },
+  {
+    "code": "public with sharing class TestBlah3 {\n  @AuraEnabled\n  public static string baddabing(){\n    return null;\n  }\n\n  public static string bibbitybobbity(){\n    system.debug('hey!1'); system.debug('hey!1'); system.debug('hey!1'); system.debug('hey!4'); system.debug('hey!4');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    system.debug('hey!');\n    return null;\n  }\n}",
+    "hasNoPermissions": true,
+    "id": "01p55000004UYBzAAO",
+    "name": "TestBlah3",
+    "permSets": [
+      {
+        "id": "0PS55000000XpOXGA0",
+        "name": "AuraEnabledScannerUser"
+      }
+    ],
+    "profiles": [
+      {
+        "id": "0PS55000000UyWKGA0",
+        "name": "Analytics Cloud Integration User"
+      },
+      {
+        "id": "0PS55000000UyWJGA0",
+        "name": "Analytics Cloud Security User"
+      },
+      {
+        "id": "0PS55000000UyVyGAK",
+        "name": "Authenticated Website"
+      },
+      {
+        "id": "0PS55000000UyVmGAK",
+        "name": "Authenticated Website"
+      },
+      {
+        "id": "0PS55000000UyWLGA0",
+        "name": "CPQ Integration User"
+      },
+      {
+        "id": "0PS55000000UyWHGA0",
+        "name": "Chatter External User"
+      },
+      {
+        "id": "0PS55000000UyWGGA0",
+        "name": "Chatter Free User"
+      },
+      {
+        "id": "0PS55000000UyWFGA0",
+        "name": "Chatter Moderator User"
+      },
+      {
+        "id": "0PS55000000UyVkGAK",
+        "name": "Company Communities User"
+      },
+      {
+        "id": "0PS55000000UyVvGAK",
+        "name": "Contract Manager"
+      },
+      {
+        "id": "0PS55000000UyWOGA0",
+        "name": "Cross Org Data Proxy User"
+      },
+      {
+        "id": "0PS55000000UyVpGAK",
+        "name": "Custom: Marketing Profile"
+      },
+      {
+        "id": "0PS55000000UyVoGAK",
+        "name": "Custom: Sales Profile"
+      },
+      {
+        "id": "0PS55000000UyVwGAK",
+        "name": "Custom: Support Profile"
+      },
+      {
+        "id": "0PS55000000UyVxGAK",
+        "name": "Customer Community Login User"
+      },
+      {
+        "id": "0PS55000000UyW8GAK",
+        "name": "Customer Community Plus Login User"
+      },
+      {
+        "id": "0PS55000000UyW2GAK",
+        "name": "Customer Community Plus User"
+      },
+      {
+        "id": "0PS55000000UyWDGA0",
+        "name": "Customer Community User"
+      },
+      {
+        "id": "0PS55000000UyW0GAK",
+        "name": "Customer Portal Manager Custom"
+      },
+      {
+        "id": "0PS55000000UyW6GAK",
+        "name": "Customer Portal Manager Standard"
+      },
+      {
+        "id": "0PS55000000UyWAGA0",
+        "name": "External Identity User"
+      },
+      {
+        "id": "0PS55000000UyW7GAK",
+        "name": "Force.com - App Subscription User"
+      },
+      {
+        "id": "0PS55000000UyWEGA0",
+        "name": "Force.com - Free User"
+      },
+      {
+        "id": "0PS55000000UyW5GAK",
+        "name": "Gold Partner User"
+      },
+      {
+        "id": "0PS55000000UyW4GAK",
+        "name": "High Volume Customer Portal"
+      },
+      {
+        "id": "0PS55000000UyVlGAK",
+        "name": "High Volume Customer Portal User"
+      },
+      {
+        "id": "0PS55000000UyW1GAK",
+        "name": "Identity User"
+      },
+      {
+        "id": "0PS55000000UyVsGAK",
+        "name": "Marketing User"
+      },
+      {
+        "id": "0PS55000000XpN9GAK",
+        "name": "Minimum Access - Salesforce"
+      },
+      {
+        "id": "0PS55000000UyW9GAK",
+        "name": "Partner App Subscription User"
+      },
+      {
+        "id": "0PS55000000UyWCGA0",
+        "name": "Partner Community Login User"
+      },
+      {
+        "id": "0PS55000000UyWBGA0",
+        "name": "Partner Community User"
+      },
+      {
+        "id": "0PS55000000UyVqGAK",
+        "name": "Read Only"
+      },
+      {
+        "id": "0PS55000000UyW3GAK",
+        "name": "Silver Partner User"
+      },
+      {
+        "id": "0PS55000000UyVrGAK",
+        "name": "Solution Manager"
+      },
+      {
+        "id": "0PS55000000UyVnGAK",
+        "name": "Standard Platform User"
+      },
+      {
+        "id": "0PS55000000UyVuGAK",
+        "name": "Standard User"
+      },
+      {
+        "id": "0PS55000000UyVtGAK",
+        "name": "System Administrator"
+      },
+      {
+        "id": "0PS55000000UyVzGAK",
+        "name": "Work.com Only User"
+      }
+    ],
+    "selectedPermSets": [],
+    "selectedProfiles": []
+  }
+]

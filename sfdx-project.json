@@ -1,0 +1,17 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true,
+      "package": "AuraEnabledScanner",
+      "versionNumber": "1.0.0.0"
+    }
+  ],
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "48.0",
+  "packageAliases": {
+    "AuraEnabledScanner": "0HoB0000000KzM9KAK",
+    "AuraEnabledScanner@1.0.0-0": "04tB0000000ZOqkIAG"
+  }
+}

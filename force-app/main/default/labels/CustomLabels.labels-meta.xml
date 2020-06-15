@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Available</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Available</shortDescription>
+        <value>Available</value>
+    </labels>
+    <labels>
+        <fullName>Cancel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Discard</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Discard</shortDescription>
+        <value>Discard changes</value>
+    </labels>
+    <labels>
+        <fullName>Getting_Started_Header</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Getting Started Header</shortDescription>
+        <value>Getting Started</value>
+    </labels>
+    <labels>
+        <fullName>Getting_Started_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Getting Started Message</shortDescription>
+        <value>Please select an Apex class from the list on the left. You can then assign Profiles and Permission Sets. Classes marked with a red flag are unassigned, meaning that those classes will be unavailable to Lightning Web Components and Aura.</value>
+    </labels>
+    <labels>
+        <fullName>Invisible_Class_Flag</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Invisible Class Flag</shortDescription>
+        <value>Class not visible to LWC/Aura</value>
+    </labels>
+    <labels>
+        <fullName>Open_Setup</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Open_Setup</shortDescription>
+        <value>Open Setup</value>
+    </labels>
+    <labels>
+        <fullName>Permission_Sets</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Permission Sets</shortDescription>
+        <value>Permission Sets</value>
+    </labels>
+    <labels>
+        <fullName>Profiles</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Profiles</shortDescription>
+        <value>Profiles</value>
+    </labels>
+    <labels>
+        <fullName>Save</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>Selected</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Selected</shortDescription>
+        <value>Selected</value>
+    </labels>
+    <labels>
+        <fullName>Unsaved_Header</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Unsaved Header</shortDescription>
+        <value>Unsaved Changes</value>
+    </labels>
+    <labels>
+        <fullName>Unsaved_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Unsaved Message</shortDescription>
+        <value>You have not saved your changes. Are you sure you want to navigate away?</value>
+    </labels>
+    <labels>
+        <fullName>Warning_Header</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Warning_Header</shortDescription>
+        <value>Well this is awkward...</value>
+    </labels>
+    <labels>
+        <fullName>Warning_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Warning Message</shortDescription>
+        <value>To use this app, you must assign yourself the &apos;AuraEnabled Scanner User&apos; permission set in the Setup Menu first.</value>
+    </labels>
+</CustomLabels>

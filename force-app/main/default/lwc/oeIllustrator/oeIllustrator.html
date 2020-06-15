@@ -1,0 +1,22 @@
+<!--
+  Copyright (c) 2020, salesforce.com, inc.
+  All rights reserved.
+  SPDX-License-Identifier: BSD-3-Clause
+  For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
+-->
+
+<template>
+  <div class={wrapperClass}>
+    <div class="container" lwc:dom="manual"></div>
+
+    <div class="slds-text-longform">
+      <template if:true={heading}>
+        <h3 class="slds-text-heading_medium">{heading}</h3>
+      </template>
+
+      <template if:true={message}>
+        <p class="slds-text-body_regular">{message}</p>
+      </template>
+    </div>
+  </div>
+</template>

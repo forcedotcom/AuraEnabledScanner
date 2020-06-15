@@ -1,0 +1,85 @@
+body {
+  overflow: hidden;
+}
+.container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.header {
+  background: #0070d2;
+  color: #fff;
+  padding: 5px 10px;
+}
+.header span {
+  font-size: 17px;
+}
+.header span.title {
+  font-family: monospace;
+  font-weight: bold;
+}
+.splitview {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  height: calc(100% - 35px);
+  background: #fff;
+}
+.list_column {
+  background: #fafaf9;
+  overflow-x: auto;
+  width: 16rem;
+  min-width: 16rem;
+  margin-right: -1px;
+}
+.code_column {
+  background: #fff;
+  display: flex;
+  flex: 1;
+  white-space: pre;
+  padding: 15px 0 0 15px;
+  border-left: 1px #dddbda solid;
+  overflow: auto;
+  font-family: monospace;
+  font-size: 12px;
+  background: #fafaf9;
+  color: #000;
+}
+.code_column pre{
+	margin: 0;
+}
+.options_column {
+  border-left: 1px solid #dddbda;
+  background: #fff;
+  width: 590px;
+  padding: 15px 15px 15px 20px;
+  overflow-y: auto;
+}
+.scanbox {
+  text-align: center;
+  padding: 20px 0px;
+}
+.welcome {
+  padding: 15px 20px;
+}
+.welcome span {
+  font-family: monospace;
+  font-weight: bold;
+}
+a.slds-split-view__list-item-action {
+  border-right: 1px solid #dddbda;
+}
+a.slds-split-view__list-item-action[aria-selected="true"] {
+  border-right: 1px solid #fff;
+  background: #fff;
+}
+a.slds-split-view__list-item-action[aria-selected="true"]:focus {
+  box-shadow: inset 4px 0 0 rgb(0, 112, 210);
+}
+.warningBox {
+  width: 400px;
+  margin: 50px auto;
+  text-align: center;
+}
