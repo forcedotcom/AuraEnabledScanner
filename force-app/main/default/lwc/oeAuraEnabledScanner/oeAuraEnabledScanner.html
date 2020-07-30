@@ -92,7 +92,9 @@
           <div class="slds-text-heading_large slds-m-bottom_small">
             {label.Getting_Started_Header}
           </div>
-          {label.Getting_Started_Message}
+          <lightning-formatted-rich-text
+            value={label.Getting_Started_Message}
+          ></lightning-formatted-rich-text>
         </div>
         <div if:true={showOptions}>
           <div class="classNameHeading slds-text-heading_large">
