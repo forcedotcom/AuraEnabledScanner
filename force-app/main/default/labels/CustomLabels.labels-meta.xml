@@ -33,7 +33,7 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>Getting Started Message</shortDescription>
-        <value>Please select an Apex class from the list on the left. You can then assign Profiles and Permission Sets. Classes marked with a red flag are unassigned, meaning that those classes will be unavailable to Lightning Web Components and Aura.</value>
+        <value>Please select an Apex class from the list on the left. You can then assign Profiles and Permission Sets. Classes marked with a red flag are unassigned, meaning that those classes will be unavailable to Lightning Web Components and Aura.&lt;br /&gt;&lt;br /&gt;&lt;p&gt;&lt;b&gt;&lt;i&gt;* The tool will not reveal Apex classes inside managed packages.&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;</value>
     </labels>
     <labels>
         <fullName>Invisible_Class_Flag</fullName>
