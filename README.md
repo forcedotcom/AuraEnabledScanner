@@ -1,6 +1,6 @@
 # AuraEnabled Scanner
 
-As part of an ongoing effort to make your org more secure, a critical update described in [this release note](https://releasenotes.docs.salesforce.com/en-us/winter20/release-notes/rn_lc_restrict_apex_authenticated_users.htm) is being activated on August 8, 2020. This may affect your org, and you should take preventative action.
+As part of an ongoing effort to make your org more secure, a critical update described in [this release note](https://releasenotes.docs.salesforce.com/en-us/summer20/release-notes/rn_lc_restrict_apex_authenticated_users.htm) is being activated on August 8, 2020. This may affect your org, and you should take preventative action.
 
 ![Restrict Access to @AuraEnabled Apex Methods for Authenticated Users based o User Profile](/readme-assets/the-update.png)
 
