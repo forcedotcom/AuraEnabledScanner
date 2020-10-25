@@ -210,6 +210,63 @@ class OE_Scanner_Test {
   }
 
   @IsTest
+  static void shouldNOTUpdateAccessesBecauseAccountIdInTheMix() {
+    Id permSetId = [
+      SELECT Id
+      FROM PermissionSet
+      WHERE Name = :OE_Scanner.PERMISSION_SET
+    ]
+    .Id;
+    Id classIdForDeletion = [SELECT Id FROM ApexClass WHERE Name = 'OE_Scanner']
+    .Id;
+    Id classIdForInsertion = [
+      SELECT Id
+      FROM ApexClass
+      WHERE Name = 'OE_Scanner_Test'
+    ]
+    .Id;
+
+    Id accessIdToDelete = [
+      SELECT Id
+      FROM SetupEntityAccess
+      WHERE ParentId = :permSetId AND SetupEntityId = :classIdForDeletion
+      LIMIT 1
+    ]
+    .Id;
+
+    Account a = new Account(Name = 'blah');
+    insert a;
+
+    Test.startTest();
+    OE_Scanner.updateAccess(
+      new List<Id>{ accessIdToDelete, a.Id },
+      new List<SetupEntityAccess>{
+        new SetupEntityAccess(
+          ParentId = permSetId,
+          SetupEntityId = classIdForInsertion
+        )
+      }
+    );
+    Test.stopTest();
+
+    System.assertEquals(
+      1,
+      [SELECT COUNT() FROM SetupEntityAccess WHERE Id = :accessIdToDelete]
+    );
+
+    System.assertEquals(1, [SELECT COUNT() FROM Account WHERE Id = :a.Id]);
+
+    System.assertEquals(
+      0,
+      [
+        SELECT COUNT()
+        FROM SetupEntityAccess
+        WHERE ParentId = :permSetId AND SetupEntityId = :classIdForInsertion
+      ]
+    );
+  }
+
+  @IsTest
   static void coverage() {
     OE_ScannerRecordGetter recordGetter = new OE_ScannerRecordGetter();
     recordGetter.getClasses();

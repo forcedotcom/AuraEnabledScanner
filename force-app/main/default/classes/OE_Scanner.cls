@@ -144,6 +144,11 @@ public without sharing class OE_Scanner {
     List<SetupEntityAccess> entitiesToInsert
   ) {
     if (entityIdsToDelete != null && !entityIdsToDelete.isEmpty()) {
+      for (Id entityId : entityIdsToDelete) {
+        if (entityId.getSobjectType() != SetupEntityAccess.getSObjectType()) {
+          return scan();
+        }
+      }
       Database.delete(entityIdsToDelete, false);
     }
 
