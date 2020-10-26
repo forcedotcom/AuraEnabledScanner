@@ -68,7 +68,7 @@ We'll make it easy for you to monitor all your Apex classes with @AuraEnabled me
 https://github.com/forcedotcom/AuraEnabledScanner
 
 Simply install the unlocked package by visiting the following URL:
-`https://<myDomain>.lightning.force.com/packaging/installPackage.apexp?p0=04tB0000000d1xfIAA`, where `<myDomain>` is the name of your custom Salesforce domain. In a sandbox or scratch org, you can also push the **@AuraEnabled Scanner** code repository into your org using the IDE of your choice.
+`https://<myDomain>.lightning.force.com/packaging/installPackage.apexp?p0=04tB0000000d26UIAQ`, where `<myDomain>` is the name of your custom Salesforce domain. In a sandbox or scratch org, you can also push the **@AuraEnabled Scanner** code repository into your org using the IDE of your choice.
 
 Then launch the app by heading on over to `https://<myDomain>.lightning.force.com/c/AuraEnabledScanner.app.` The **@AuraEnabled Scanner** requires you to have the AuraEnabled Scanner User permission set. You’ll be prompted to assign it if you haven’t done so.
 

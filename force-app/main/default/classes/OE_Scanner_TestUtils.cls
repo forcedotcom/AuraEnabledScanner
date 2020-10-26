@@ -16,13 +16,18 @@ public class OE_Scanner_TestUtils {
 
   static Profile getStandardUserProfile() {
     if (standardUserProfile == null) {
-      standardUserProfile = getProfile('Standard User');
+      standardUserProfile = [
+        SELECT Id
+        FROM Profile
+        WHERE
+          UserType = 'Standard'
+          AND PermissionsPrivacyDataAccess = false
+          AND PermissionsSubmitMacrosAllowed = true
+          AND PermissionsMassInlineEdit = true
+        LIMIT 1
+      ];
     }
     return standardUserProfile;
-  }
-
-  static Profile getProfile(String name) {
-    return [SELECT Id FROM Profile WHERE Name = :name];
   }
 
   static User createTestUser(String name, Profile p) {
