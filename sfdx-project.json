@@ -4,7 +4,7 @@
             "path": "force-app",
             "default": true,
             "package": "AuraEnabledScanner",
-            "versionNumber": "1.0.1.0"
+            "versionNumber": "1.0.2.0"
         }
     ],
     "namespace": "",
@@ -12,7 +12,6 @@
     "sourceApiVersion": "48.0",
     "packageAliases": {
         "AuraEnabledScanner": "0HoB0000000KzM9KAK",
-        "AuraEnabledScanner@1.0.0-0": "04tB0000000ZOqkIAG",
-        "AuraEnabledScanner@1.0.1-0": "04tB0000000ZQHxIAO"
+        "AuraEnabledScanner@1.0.2-0": "04tB0000000d1xfIAA"
     }
 }
